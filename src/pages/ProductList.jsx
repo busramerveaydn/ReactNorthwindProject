@@ -5,11 +5,12 @@ import ProductServices from '../services/productService'
 export default function ProductList() {
 
     const [products, setProducts] = useState([])
+    
 //compannet yüklendiğinde yapılması istenen kod yazılır.
     useEffect(()=>{
         let productService = new ProductServices()
         productService.getProducts().then(result=>setProducts(result.data.data))
-    })
+    },[])
 
     return (
         <div>
