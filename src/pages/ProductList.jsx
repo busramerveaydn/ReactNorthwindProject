@@ -5,7 +5,7 @@ import ProductServices from '../services/productService'
 export default function ProductList() {
 
     const [products, setProducts] = useState([])
-    
+
 //compannet yüklendiğinde yapılması istenen kod yazılır.
     useEffect(()=>{
         let productService = new ProductServices()
@@ -40,7 +40,7 @@ export default function ProductList() {
                 </Table.Body>
                 <Table.Footer>
                     <Table.Row>
-                        <Table.HeaderCell colSpan='3'>
+                        <Table.HeaderCell colSpan='5'>
                             <Menu floated='right' pagination>
                                 <Menu.Item as='a' icon>
                                     <Icon name='chevron left' />
