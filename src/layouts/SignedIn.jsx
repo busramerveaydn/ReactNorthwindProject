@@ -5,7 +5,7 @@ export default function SignedIn(props) {
     return (
         <div>
             <Menu.Item>
-                <Image avatar spaced="right"  />
+                <Image avatar spaced="right" src="https://avatars.githubusercontent.com/u/32596414?" />
                 <Dropdown pointing="top left"  text="Büşra Merve">
                     <Dropdown.Menu>
                         <Dropdown.Item text="Bilgilerim" icon="info"/>
